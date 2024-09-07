@@ -1,7 +1,25 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    height: 100%;
+  }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+  }
+
+
 .Navbar{
     display: flex;
     height:48px;
- 
+    padding: 6px;
     font-size: 15px;
     font-family: Roboto, Arial, sans-serif;
     justify-content: space-between;
@@ -23,9 +41,11 @@
 }
 #signin{
     background-color: rgb(194, 231, 255);
-    padding: 0px 20px  ;
+    padding: 15px 25px  ;
+    margin:5px;
     border-radius: 30px;
     text-align: center;
+    border: none;
 }
 
 #logo_div{
@@ -45,7 +65,7 @@
 }
 .button{
     padding:9px 20px;
-    background-color: rgb(216, 219, 221);
+    background-color: rgb(240, 240, 240);
     margin: 20px 7px;
     font-family: Roboto, Arial, sans-serif;
     font-size: 15px;
@@ -66,4 +86,23 @@ input[type=search]{
 }
 #DOM-tree{
     text-decoration: none;
+}
+.link{
+    text-decoration: none;
+    color:black;
+}
+.footer{
+    margin: 0;
+    padding: 15px 30px;
+    background-color: rgb(240, 240, 240);
+    font-size: 15px;
+    color:#0c0c0c;
+    font-family: Roboto;
+    align-content: center;
+    justify-content: center;
+    height: 25px;
+}
+.links{
+    padding-left: 5px;
+    padding-right: 5px;
 }

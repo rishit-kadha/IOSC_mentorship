@@ -13,12 +13,12 @@
         <!--Left-->
         <div style="display: flex;">
             <div class="Left_n">
-                <a>
+                <a href="https://about.google/" class="link">
                     About
                 </a>
             </div>
             <div class="Left_n">
-                <a>
+                <a href="https://store.google.com/" class="link">
                     Store
                 </a>
             </div>
@@ -26,91 +26,138 @@
         <!--Right-->
         <div style="display: flex;">
             <div class="Right_n">
-                <a>
+                <a href="https://www.google.com/intl/en/gmail/about/" class="link">
                     Gmail
                 </a>
             </div>
             <div class="Right_n">
-                <a>
+                <a href="https://www.google.com/imghp?hl=en&ogbl" class="link">
                     Images
                 </a>
             </div>
-            <div class="Right_n"> <!--designing the button using divs-->
-                <div style="display: flex;flex-direction: column;">
-                    <div style="display: flex;margin: 1px 0px">
-                        <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
-                        <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
-                        <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
+            <a href="https://about.google/products/" class="Right_n">
+                <div class="Right_n"> <!--designing the button using divs-->
+                    <div style="display: flex;flex-direction: column;" >
+                        <div style="display: flex;margin: 1px 0px">
+                            <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
+                            <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
+                            <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
+                        </div>
+                        <div style="display: flex;margin: 1px 0px">
+                            <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
+                            <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
+                            <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
+                        </div>
+                        <div style="display: flex;margin: 1px 0px">
+                            <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
+                            <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
+                            <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
+                        </div>
                     </div>
-                    <div style="display: flex;margin: 1px 0px">
-                        <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
-                        <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
-                        <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
-                    </div>
-                    <div style="display: flex;margin: 1px 0px">
-                        <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
-                        <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
-                        <div style="height: 4px;width: 4px;background-color: rgb(51, 51, 51); margin : 0px 1px; border-radius: 3px;"></div>  
-                    </div>
+    
                 </div>
+                
+            </a>
 
-            </div>
-            <div class="Right_n" id="signin">
-                Sign In
-            </div>
+            <form action="https://accounts.google.com/InteractiveLogin/signinchooser" class="Right_n">
+                <button class="Right_n" id="signin">
+                    Sign In
+                </button>
+            </form>
+
 
         </div>
     </div>
 
     <!--Main-Content-->
+    <div id="wrapper">
+        <!--google-logo-->
+        <div style="display: flex;justify-content: space-around;">
+            <div>
+                <img src="Google.png" id="logo_div">
+            </div>
 
-    <!--google-logo-->
-    <div style="display: flex;justify-content: space-around; margin-top: 70px;">
-        <div>
-            <img src="Google.png" id="logo_div">
         </div>
 
-    </div>
+        <!--Search and buttons-->
+        <form action="https://google.com/search" method="GET">
+            <div class="search" style="display:flex; justify-content: space-around;">
+                <div>
+                    <div id="searchbar" style="display: flex;justify-content: space-between;">
+                        <!--Search icon-->
+                        <div style="height:inherit">
+                            <img src="mag_glass.png" style="height: 30px; padding: 10px;">
+                        </div>
+                        <!--search form-->
+                        <div style="height:inherit">
+                            
+                                <input type="search"id="q" name="q" autocomplete="off">
 
-    <!--Search and buttons-->
-    <form action="https://www.google.com/search" method="GET">
-        <div class="search" style="display:flex; justify-content: space-around;">
-            <div>
-                <div id="searchbar" style="display: flex;justify-content: space-between;">
-                    <!--Search icon-->
-                    <div style="height:inherit">
-                        <img src="mag_glass.png" style="height: 30px; padding: 10px;">
-                    </div>
-                    <!--search form-->
-                    <div style="height:inherit">
-                        
-                            <input type="search"id="q" name="q" autocomplete="off">
+                        </div>
+                        <!--mic and lens-->
+                        <div style="align-self: right;">
+                            <img src="google_mic.png" style="height: 30px;padding:10px 2.5px">
+                            <img src="google_lens.png" style="height : 30px; padding: 10px 10px 10px 2.5px;">
+                        </div>
 
                     </div>
-                    <!--mic and lens-->
-                    <div style="align-self: right;">
-                        <img src="google_mic.png" style="height: 30px;padding:10px 2.5px">
-                        <img src="google_lens.png" style="height : 30px; padding: 10px 10px 10px 2.5px;">
-                    </div>
+                    <div class="buttons" style="display: flex; justify-content: space-around;">
+                        <div style="display: flex;">
+                            <button type="submit" value="Google Search" class="button">Google Search</button>
+                            <button type="submit" class="button" name="btnI" value="1">I'm Feeling Lucky</button>
+                        </div>
 
-                </div>
-                <div class="buttons" style="display: flex; justify-content: space-around;">
-                    <div style="display: flex;">
-                        <button type="submit" value="Google Search" class="button">Google Search</button>
-                        <button type="submit" class="button" name="btnl" value="1">I'm Feeling Lucky</button>
                     </div>
+                    <div style="display: flex; justify-content: space-around;">
+                        <div style="font-size: 14px;font-family: Roboto;">
+                            Google offered in :
+                            <a href="structure.html" id="DOM-tree">DOM-tree</a>
+                        </div>
 
-                </div>
-                <div style="display: flex; justify-content: space-around;">
-                    <div>
-                        Google offered in :
-                        <a href="structure.html" id="DOM-tree">DOM-tree</a>
                     </div>
-
                 </div>
             </div>
+        </form>
+    </div>
+
+
+
+
+    <!--Footer-->
+    <div id="Footer">
+        <div class="footer" style="border-bottom: 1px solid rgb(209, 209, 209);">
+            <a class="links" >
+                India
+            </a>
         </div>
-    </form>
+        <div class="footer" style="display: flex;justify-content: space-between;">
+            <div>
+                <a class="links">
+                    Advertising
+                </a>
+                <a class="links">
+                    Business
+                </a>
+                <a class="links">
+                    How Search Works
+                </a>
+
+            </div>
+            <div>
+                <a class="links">
+                    Privacy
+                </a>
+                <a class="links">
+                    Terms
+                </a>
+                <a class="links">
+                    Settings
+                </a>
+
+            </div>
+
+        </div>
+    </div>
     
 </body>
 </html>
