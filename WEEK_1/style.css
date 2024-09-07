@@ -103,6 +103,8 @@ input[type=search]{
     height: 25px;
 }
 .links{
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    text-decoration: none;
+    color:black;
 }
