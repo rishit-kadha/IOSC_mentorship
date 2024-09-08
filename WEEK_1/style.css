@@ -99,7 +99,7 @@ input[type=search]{
     background-color: rgb(240, 240, 240);
     font-size: 15px;
     color:#0c0c0c;
-    font-family: Roboto;
+    font-family: Roboto, Arial, sans-serif;
     align-content: center;
     justify-content: center;
     height: 25px;
@@ -109,4 +109,5 @@ input[type=search]{
     padding-right: 7.5px;
     text-decoration: none;
     color:black;
+    font-family: Roboto, Arial, sans-serif;
 }
