@@ -1,0 +1,101 @@
+*{
+    margin-top: 0;
+    margin-left: 0;
+
+}
+.Navbar{
+    height: 50px;
+    background-color: #0F0F0F;
+    border-bottom-color: white;
+    border-bottom-width: 5px;
+
+}
+.link{
+    color: azure;
+    text-decoration: none;
+    font-family: "Roboto",sans-serif;
+
+}
+.Right_n, .Left_n{
+    padding: 5px 20px;
+    margin: 0px, 5px;
+}
+#Download{
+    margin-right: 20px;
+    border: none;
+    padding: 5px,20px;
+    background-color: rgb(51, 51, 51);
+    font-family: "Roboto",sans-serif;
+    color: azure;
+    border-radius: 7px;
+}
+
+div{
+    align-content: center;
+    text-align: center;
+}
+.wrapper{
+    height: 100vh;
+    position: relative;
+    perspective: 500px;
+    justify-content: space-around;
+    background-color: #0F0F0F;
+
+}
+.blob{
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+    filter: blur(60px);
+}
+.main{
+    z-index: 100;
+    align-content: center;
+}
+.primary{
+    color: whitesmoke ;
+    font-size: 75px;
+    font-family: "roboto";
+    font-weight: 200;
+}
+.secondary {
+    color: azure;
+    font: bold 120px Poppins, sans-serif;
+    transition:  color 2s ease-in, background-image 2s ease-in;
+}
+.secondary:hover{
+    font: bold 120px Poppins, sans-serif;
+    background-image:linear-gradient(60deg,#E21143,#FFB03A);
+    background-clip: text;
+    color:transparent;
+    transition: color 2s ease-in, background-image 2s ease-in;
+}
+
+.main_blobs{
+    mix-blend-mode: normal;
+}
+.overlay_blobs{
+    mix-blend-mode: overlay;    
+}
+.main_blob_holder,.overlay_blob_holder{
+    position: absolute;
+    left:0;
+    top:0;
+    height: inherit;
+    isolation: isolate;
+
+}
+#b1{
+    margin-left:0;
+    left:0;
+    top:0;
+    background-color:#E21143;
+
+}
+#b2{
+    margin-left:0;
+    left:0;
+    top:50px;
+    background-color:#FFB03A;
+}
+
